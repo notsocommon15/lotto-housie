@@ -81,9 +81,8 @@ const CreateRoom = () => {
         setErrors({});
 
         try {
-            console.log('User :', user);
             const response = await axios.post(
-                'http://localhost:5000/api/game/room',
+                '/api/game/room',
                 {
                     name: formData.roomName,
                     ticketPrice: formData.ticketPrice,

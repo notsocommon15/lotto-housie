@@ -95,7 +95,7 @@ const GameRoom = () => {
 
     const buyTicket = async () => {
         try {
-            console.log('roomId sent to buyTicket:', roomId);
+            
             const response = await axios.post('/api/ticket/buy', { roomId });
             setUserTicket(response.data.ticket);
             setHasPurchasedTicket(true);
